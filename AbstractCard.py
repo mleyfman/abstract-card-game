@@ -1,5 +1,5 @@
 class AbstractCard:
-    """Abstract Class for handling comparisons between cards based on rank"""
+    """Abstract class for handling comparisons between cards based on rank"""
 
     def __init__(self, value=None, suit=None, rank=None):
         self.value = value
@@ -38,7 +38,7 @@ class AbstractCard:
 
     def __repr__(self):
         data = (self.value, self.suit, self.rank)
-        return "value:{}, suit:{}, rank:{}".format(*data)
+        return "(value:{}, suit:{}, rank:{})".format(*data)
 
     def __str__(self):
         data = (self.value, self.suit)
