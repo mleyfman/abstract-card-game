@@ -16,7 +16,6 @@ class AbstractDeck:
         """Shuffles the deck with the Fisher-Yates shuffle"""
         num_cards = len(self.cards)
         for i in range(0, num_cards):
-            
             j = randint(i, num_cards - 1)
             self.cards[i], self.cards[j] = self.cards[j], self.cards[i]
     
